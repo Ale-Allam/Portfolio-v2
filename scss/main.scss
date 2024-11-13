@@ -1,0 +1,25 @@
+// Import global files using @use
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'reset' as *;
+@use 'responsive' as *;
+
+// Base styles
+@use 'base/base' as *;
+@use 'base/typography' as *;
+@use 'base/animations' as *;
+
+// Layout styles
+@use 'layout/grid' as *;
+@use 'layout/header' as *;
+@use 'layout/footer' as *;
+@use 'layout/intro' as *;
+
+// Component styles
+@use 'components/card' as *;
+@use 'components/navbar' as *;
+@use 'components/modal' as *;
+
+// Utility styles
+@use 'utils/helpers' as *;
+@use 'utils/responsive' as *;
