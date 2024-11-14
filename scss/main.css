@@ -8,7 +8,6 @@
 
 html, body {
   height: 100%;
-  font-family: "Arial", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -36,27 +35,106 @@ html, body {
   }
 }
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
   line-height: 1.5;
+  background-color: #111111;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
 }
 
-p {
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
 a {
-  color: #3498db;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+
+.sidebar {
+  width: 31.25rem;
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar__item {
+  margin: 1rem 0;
+}
+.sidebar__item:last-child {
+  margin-bottom: 0;
+}
+.sidebar__link {
+  text-transform: uppercase;
+  color: #111111;
+  text-decoration: none;
+  font-size: 4.375rem;
+  padding: 0.5rem;
+  display: block;
+  transition: color 0.3s;
+}
+.toggle {
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  right: 35px;
+  top: 35px;
+  z-index: 99;
+  width: 32px;
+  height: 22px;
+}
+.toggle__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle__indicator {
+  position: relative;
+  height: 1.3em;
+  width: 1.3em;
+}
+.toggle__bar {
+  width: 32px;
+  height: 2px;
+  background-color: #111111;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+.toggle__bar:nth-child(1) {
+  top: 10%;
+}
+.toggle__bar:nth-child(2) {
+  top: 50%;
+}
+.toggle__bar:nth-child(3) {
+  top: 90%;
+}
+.toggle__input:checked + .toggle__indicator .toggle__bar:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.toggle__input:checked + .toggle__indicator .toggle__bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.toggle__input:checked + .toggle__indicator .toggle__bar:nth-child(3) {
+  transform: translateX(-50px);
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

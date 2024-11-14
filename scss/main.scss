@@ -17,8 +17,9 @@
 
 // Component styles
 @use 'components/card' as *;
-@use 'components/navbar' as *;
 @use 'components/modal' as *;
+@use 'components/sidebar' as *;
+@use 'components/toggel' as *;
 
 // Utility styles
 @use 'utils/helpers' as *;

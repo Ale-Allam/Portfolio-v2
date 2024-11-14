@@ -1,11 +1,11 @@
 @use '../variables' as *;
 
 body {
-  font-size: $font-size-base; 
   font-family: $font-family-base;
-  background-color: $background-color;
-  color: $text-color;
+  font-size: $font-size-base; 
   line-height: 1.5;
+  background-color: $main-color;
+  color: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,16 +13,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-bold;
 }
 
-p {
-  font-weight: $font-weight-normal;
-  margin-bottom: $space-md; 
-}
+// p {
+//   font-weight: $font-weight-normal;
+//   margin-bottom: $space-md; 
+// }
 
 a {
-  color: $link-color;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }

@@ -37,7 +37,9 @@
   <!-- Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <!-- Example font: Roboto -->
 
   <!-- Stylesheets -->
@@ -80,20 +82,49 @@
 
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+
+  <label class="toggle">
+    <input type="checkbox" class="toggle__input">
+    <div class="toggle__indicator">
+      <span class="toggle__bar"></span>
+      <span class="toggle__bar"></span>
+      <span class="toggle__bar"></span>
+    </div>
+  </label>
+
+  <div class="sidebar">
+    <nav class="sidebar__nav">
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a href="#section1" class="sidebar__link">
+            <span class="hover-effect"></span>Home
+          </a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#section2" class="sidebar__link">
+            <span class="hover-effect"></span>About
+          </a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#section3" class="sidebar__link">
+            <span class="hover-effect"></span>Portfolio
+          </a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#section4" class="sidebar__link">
+            <span class="hover-effect"></span>Contact
+          </a>
+        </li>
       </ul>
     </nav>
-  </header>
+  </div>
+
+
 
   <!-- Hero Section -->
   <section id="hero">
-    <h1>Ali Allam</h1>
+    <h1>IBTRODUCTION</h1>
     <p>Front-End Developer | Building modern, responsive web applications</p>
     <a href="#projects" class="cta-button">View My Work</a>
   </section>
@@ -144,6 +175,8 @@
   <footer>
     <p>&copy; 2024 Ali Allam. All rights reserved.</p>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
